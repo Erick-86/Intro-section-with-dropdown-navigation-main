@@ -8,3 +8,63 @@
     font-family: 'Epilogue', sans-serif;
     list-style: none;
 }
+
+/* header container */
+ .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* logo */
+.header-container .logo {
+    color: hsl(0, 0%, 8%);
+    font-size: 3.3rem;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.header-container .logo:hover{
+    color: hsl(0, 0%, 16%);
+}
+/* logo */
+
+/* nav items */
+.header-container .nav-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-left: 2rem;
+}
+
+/* nav left items */
+.nav-items .left-items, .right-items{
+    display: flex;
+}
+
+.nav-items .left-items li{
+    margin-right: 1.5rem;
+}
+
+.left-items li a, .right-items li a{
+    color: hsl(0, 0%, 48%);
+    font-weight: 500;
+    transition: .3s;
+}
+
+.left-items li a:hover{
+color: hsl(0, 0%, 16%);
+}
+
+/* nav right items */
+.nav-items .right-items li{
+    margin-left: 1.5rem;
+}
+
+.right-items li a:hover{
+    color: hsl(0, 0%, 16%);
+}
